@@ -15,6 +15,9 @@ You can use this utility from the command line. The basic command format is:
 
 `java br.com.questingsoftware.libgdx.g3db.G3DBConverter /path/to/models/folder [true|false]`
 
+Can also use compiled jar:
+`java -jar target/compiled-jar-with-dependancies.jar /path/to/convert`
+
 where */path/to/models/folder* is a folder containing G3DJ files and the second (optional) argument is "true" to overwrite any existing files or "false" to generate a counter at the end of the file name to avoid overwriting files.
 
 This class can also be called from inside your code, for that just call the `G3DBConverter#convertFolder` or `G3DBConverter#convert` method. See javadoc for usage.
